@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to right, #005aa7, #fffde4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow to the background */
+}
+
+.card {
+    width: 90%;
+    max-width: 470px;
+    background: linear-gradient(135deg, #efebbe, #2874b7);
+    color: #fff;
+    border-radius: 30px 35px;
+    padding: 40px 35px;
+    text-align: center;
+    box-shadow: 5px 4px 8px rgba(247, 2, 2, 0.1); /* Add shadow to the card */
+}
+.search{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.search input{
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    color: #555;
+    padding: 10px 25px;
+    height: 60px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 18px;
+    line-height: 60px; 
+}
+
+.search button{
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.search button img{
+    width: 16px;
+}
+
+.weathericon{
+    width: 170px;   
+    margin-top: 30px;
+}
+
+.weather h1{
+    font-size: 80px;
+    font-weight: 500;
+}
+
+.weather h2{
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: -10px;
+
+}
+
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 50px;
+}
+
+.col{
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.col img{
+    width: 40%;
+    margin-right: 10px;
+}
+
+/* Add a media query for screens smaller than 600px */
+@media (max-width: 600px) {
+    .card {
+        width: 90%;
+        max-width: 470px;
+        border-radius: 30px 35px;
+        padding: 20px 15px;
+        text-align: center;
+        box-shadow: 5px 4px 8px rgba(247, 2, 2, 0.1); /* Add shadow to the card */
+    }
+    .search{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .search input{
+        width: 90%;
+        padding: 0px 15px;
+        height: 50px;
+        border-radius: 30px;
+    }
+
+    .search button{
+        width: 50px;
+        height: 50px;
+    }
+    
+    .weathericon{
+        width: 170px;   
+        margin-top: 5px;
+    }
+    .col img{
+        width: 28%;
+        margin-right: 10px;
+    }
+    .details{
+        justify-content: space-evenly;
+    }
+}
